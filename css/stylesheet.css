@@ -1,0 +1,85 @@
+body {
+	margin: 0;
+	font-family: verdana, sans-serif;
+}
+
+h1	{
+	font-family: 'Roboto', sans-serif;
+	font-size: 50px;
+	text-align: center;
+}
+
+.slideshow-container {
+	width: 1000px;
+	position: relative;
+	margin: auto;
+}
+
+.slides {
+	display: none;
+}
+
+.number {
+	position: absolute;
+	padding: 8px 12px;
+	color: #f2f2f2;
+}
+
+.text {
+	text-align: center;
+	font-size: 15px;
+	position: absolute;
+	width: 100%;
+	padding: 8px 16px;
+	bottom: 8px;
+	color: #f2f2f2;
+}
+
+.prev, .next {
+	position: absolute;
+	top: 50%;
+	color: #f2f2f2;
+	font-weight: bold;
+	padding: 15px;
+	font-size: 18px;
+	border-radius: 50%;
+}
+
+.next {
+	right: 0;
+}
+
+.prev:hover, .next:hover {
+	background: rgba(0,0,0,0.8);
+}
+
+.dots {
+	width: 10px;
+	height: 10px;
+	display: inline-block;
+	background: gray;
+	padding: 5px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.fade {
+	animation-name: fade;
+	animation-duration: 0.3s;
+}
+
+@keyframes fade {
+	from{opacity: 0.4}
+	to{opacity: 1}
+}
+
+.active, .dots:hover {
+	background: #333;
+}
+
+#myFooter {
+			padding: 20px;
+			background-color: rgb(189,183,107);
+			text-align: center;
+			margin-top: 10px;
+}
